@@ -94,7 +94,7 @@ function buildPackageJson(packageJson, folderName) {
     version: "1.0.0",
     description: "",
     author: "",
-    main: "dist/index.js",
+    main: "dist/main.js",
     scripts: {
       start: "npm run build && electron .",
       build: "tsc",
@@ -102,13 +102,13 @@ function buildPackageJson(packageJson, folderName) {
     devDependencies: {
       "@types/react": "^17.0.15",
       "@types/react-dom": "^17.0.9",
-      electron: "^13.1.8",
-      rimraf: "^3.0.2",
-      typescript: "^4.3.5",
+      rimraf: "^3.0.2"
     },
     dependencies: {
-      react: "^17.0.2",
-      "react-dom": "^17.0.2",
+      "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "electron": "^13.1.8",
+    "typescript": "^4.3.5"
     },
   });
 
